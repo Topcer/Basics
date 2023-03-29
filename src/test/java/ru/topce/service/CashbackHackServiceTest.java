@@ -3,6 +3,7 @@ package ru.topce.service;
 import org.junit.Assert;
 import org.junit.Test;
 
+
 public class CashbackHackServiceTest {
     CashbackHackService service = new CashbackHackService();
     @Test
@@ -32,8 +33,9 @@ public class CashbackHackServiceTest {
 
         Assert.assertEquals(expected, actual);
     }
+
     @Test
-    public void shouldRemain0IfAmount1000() {
+    public void shouldReturnZeroIfAmountLowerThan1000() {
 
         int amount = 1000;
         int expected = 0;
